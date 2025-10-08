@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;   /* Permite crescer além da tela */
+  display: flex;
+  justify-content: center;
+  background-color: rgb(51, 27, 27);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  overflow-y: auto;   /* Habilita rolagem na página */
+}
+
+.container {
+  color: white;
+  margin: 20px auto;
+  width: 600px;
+  max-width: 95%;  /* Responsivo em telas menores */
+  padding: 20px;
+  background: linear-gradient(90deg, rgb(77, 34, 34) 0%, rgb(114, 7, 7) 100%);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+  position: relative;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+input[type="text"],
+.data {
+  width: 80%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+button {
+  width: 200px;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(1, 255, 52, 0.7);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(21, 0, 0);
+  color: #8477c1;
+  transition: 0.5s;
+}
+
+.tabela-container {
+  max-height: 300px;   /* Limita altura da lista */
+  overflow-y: auto;    /* Scroll interno */
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+table {
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+th,
+td {
+  padding: 12px;
+  font-size: 16px;
+  border-bottom: 1px solid white;
+}
+
+.acao-btn {
+  margin: 0 5px;
+  font-size: 14px;
+  padding: 5px 2px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.acao-concluir {
+  background-color: rgb(255, 255, 255);
+  color: white;
+}
+
+.acao-excluir {
+  background-color: rgb(75, 75, 75);
+  color: rgb(255, 0, 0);
+}
+
+.status-pendente {
+  color: rgb(251, 255, 0);
+  font-weight: bold;
+}
+
+.status-concluida {
+  color: rgb(3, 255, 3);
+  font-weight: bold;
+  text-decoration: line-through;
+}
